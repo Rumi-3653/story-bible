@@ -1,0 +1,11 @@
+# 你的設定卡正本(常含未發表 IP、劇透、私人角色)預設不進這個 repo。
+# 想一起版控就刪掉這行;或像作者一樣,在 library/ 裡另開一個私有 repo。
+/library/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Windows Explorer junk (thumbnail caches next to reference images)
+Thumbs.db
+desktop.ini
