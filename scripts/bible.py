@@ -179,7 +179,8 @@ def main(argv=None):
         targets = a.paths or [ROOT / "library"]
         missing = [t for t in targets if not Path(t).exists()]
         if missing:
-            print(f"找不到:{', '.join(map(str, missing))}", file=sys.stderr)
+            print(f"找不到:{', '.join(map(str, missing))}"
+                  "(還沒建卡的話,先試 python scripts/bible.py check examples)", file=sys.stderr)
             return 2
         errs, warns = check_paths(targets)
         for line in errs + warns:
